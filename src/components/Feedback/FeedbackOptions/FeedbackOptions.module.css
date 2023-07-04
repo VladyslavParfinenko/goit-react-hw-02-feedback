@@ -1,0 +1,19 @@
+.container {
+    display: flex;
+    justify-content: space-around;
+}
+.button{
+    padding: 20px 0;
+    width: 80px;
+    font-weight: 700;
+    font-size: 12px;
+    border: none;
+
+    background-color:rgb(233, 227, 239);
+    
+}
+
+.button:hover,.button:focus{
+    background-color:rgb(198, 188, 207);
+    transform: scale(1.2);
+}
