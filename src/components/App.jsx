@@ -70,7 +70,7 @@ onFeedback =(feedback)=>{
     >
     
       <Section title="Please leave feedback">
-      <FeedbackOptions options={['good','neutral','bad']} onLeaveFeedback={this.onFeedback}/>
+      <FeedbackOptions options={Object.keys(this.state)} onLeaveFeedback={this.onFeedback}/>
       </Section>
       <Section title="Statistic">
       {this.countTotalFeedback() === 0 ? (<Notification message="There is no feedback"/> ):(<Statistics good={good} neutral={neutral} bad={bad} total={this.countTotalFeedback()} positivePercentage={this.countPositiveFeedbackPercentage()}/>) }
